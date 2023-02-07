@@ -286,5 +286,3 @@ let first = new Memo(
   `hello🖐
 drag to create`,
 );
-
-console.log(first);
