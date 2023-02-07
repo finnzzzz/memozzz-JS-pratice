@@ -1,4 +1,6 @@
 import './style.css'
+import moveDiagonal from "./public/move-diagonal-2.svg";
+import x from "./public/x.svg";
 
 const board = document.querySelector(".board");
 const selectionDiv = document.querySelector(".selection");
@@ -119,7 +121,7 @@ class Memo {
     this.close.addEventListener("click", this.deleteMemo.bind(this));
 
     this.closeImg = document.createElement("img");
-    this.closeImg.setAttribute("src", "./public/x.svg");
+    this.closeImg.setAttribute("src", `${x}`);
     this.close.appendChild(this.closeImg);
 
     this.text = document.createElement("textarea");
@@ -132,7 +134,7 @@ class Memo {
     this.resize = document.createElement("div");
     this.resizeImg = document.createElement("img");
     this.resize.classList.add("resize");
-    this.resizeImg.setAttribute("src", "./public/move-diagonal-2.svg");
+    this.resizeImg.setAttribute("src", `${moveDiagonal}`);
     this.resize.addEventListener("mousedown", this.mouseDownResize.bind(this));
     this.div.appendChild(this.resize);
     this.resize.appendChild(this.resizeImg);
