@@ -1,3 +1,5 @@
+import './style.css'
+
 const board = document.querySelector(".board");
 const selectionDiv = document.querySelector(".selection");
 const removeAll = document.querySelector(".removeAll");
