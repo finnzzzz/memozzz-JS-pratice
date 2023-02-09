@@ -106,6 +106,7 @@ main{
   border-left: 1px solid var(--border-color);
   cursor: se-resize;
   text-align: center;
+  line-height: 14px;
 }
 
 .resize img{
