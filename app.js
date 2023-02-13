@@ -1,4 +1,4 @@
-import './style.css'
+import "./style.css";
 import moveDiagonal from "./public/move-diagonal-2.svg";
 import x from "./public/x.svg";
 
@@ -76,14 +76,15 @@ board.addEventListener("mousemove", (e) => {
 });
 
 function removeCheck(e) {
-  window.confirm("❗ Remove all memos ?");
-  if (true) {
+  var result = window.confirm("❗ Remove all memos ?");
+  if (result == true) {
     let memoAll = document.querySelectorAll(".memo");
     memoAll.forEach((item) => {
       item.remove();
     });
     memoList = [];
     updateLocalStorage();
+  } else {
   }
 }
 
@@ -288,5 +289,5 @@ let first = new Memo(
   { left: 10, top: 10 },
   { width: 180, height: 90 },
   `hello🖐
-drag to create`,
+drag to create`
 );
